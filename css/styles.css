@@ -1,0 +1,459 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-m {
+  max-width: 997px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Spectral SC", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.5;
+  color: #2e2f22;
+  margin: 85px 0 49px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 18px;
+  text-align: left;
+}
+
+.button {
+  width: 224px;
+  height: 46px;
+  border: 1px solid #202117;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: #202117;
+  background: none;
+  cursor: pointer;
+}
+
+.button-social {
+  height: 50px;
+  width: 50px;
+  background: url("../img/thumb.svg") no-repeat center/contain;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.added {
+  background: url("../img/thumb_black.svg") no-repeat center/contain;
+}
+
+.nondesign-a {
+  text-decoration: none;
+  color: #2e2f22;
+}
+
+.text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.62;
+  color: #2e2f22;
+}
+
+.white-text {
+  color: #fff;
+}
+/*start of the header*/
+
+.header {
+  height: 100vh;
+  width: calc(100vw - (100vw - 100%));
+  background: no-repeat center/cover url("../img/sonnie-hiles.jpg");
+}
+
+.header_motivation {
+  height: 100vh;
+  width: calc(100vw - (100vw - 100%));
+  background: no-repeat center/cover url("../img/samuel-scrimshaw.jpg");
+}
+
+.header-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.header-list__item {
+  font-size: 18px;
+  margin-left: 83px;
+}
+
+/*end of the header, start of the stories*/
+
+.stories-start {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.stories-title {
+  text-align: start;
+}
+
+.stories-select {
+  margin-left: auto;
+  width: 203px;
+  height: 46px;
+  background: #d7d1c9 url("../img/triangle.svg") no-repeat right 20px top 50%;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.stories-boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  line-height: 1.62;
+  margin-bottom: 62px;
+}
+
+.stories-boxes-nomar {
+  margin-bottom: 0;
+}
+
+.stories-box {
+  flex-basis: 30%;
+  margin-right: 19px;
+}
+
+.stories-box:last-child {
+  margin-right: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.stories-box-big {
+  flex-basis: 45%;
+  margin-right: 20px;
+  position: relative;
+}
+
+.stories-box-big__text {
+  color: white;
+  position: absolute;
+  bottom: 61px;
+  left: 82px;
+  right: 79px;
+}
+
+.stories-box-big:last-child {
+  margin-right: 0;
+}
+
+.stories-boxes-title {
+  margin: 27px 0 8px;
+}
+
+.stories-boxes-big-title {
+  color: #fff;
+  font-size: 20px;
+}
+
+.stories-boxes-big-text {
+  font-size: 18px;
+}
+
+.stories-box-floor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.stories-box__button {
+  margin: 116px calc(50% - 112px) 0;
+}
+
+/*end of stories, starf of About me part*/
+.about-me-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-me__text {
+  padding: 42px 74px 30px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me__text p:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.about-me__text_new {
+  font-style: italic;
+  font-size: 30px;
+  line-height: 1.33;
+  margin-top: auto;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.portfolio-part {
+  width: 387px;
+  margin-right: 20px;
+  height: 525px;
+  border-radius: 10px;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
+  padding: 140px 10px 188px;
+}
+
+.portfolio-part:last-child {
+  margin-right: 0;
+}
+
+.portfolio-part-1 {
+  background: url("../img/blog.jpg") no-repeat center/cover #c4c4c4;
+}
+
+.portfolio-part-2 {
+  background: url("../img/lnk.jpg") no-repeat center/cover #ecc8c8;
+}
+
+.portfolio-part-3 {
+  background: url("../img/TL.jpg") no-repeat center/cover #c4c4c4;
+}
+
+.portfolio-title {
+  font-size: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.portfolio-subtitle {
+  margin: 44px auto 17px;
+  text-align: center;
+}
+
+.portfolio-text {
+  text-align: center;
+}
+/*end of the portfolio, start of the write-me */
+.write-me {
+  width: 996px;
+  height: 637px;
+  background: url("../img/writeMe.jpg") no-repeat center/cover #c4c4c4;
+  border-radius: 10px;
+  margin: 0 auto 80px;
+  padding: 53px 81px 0;
+}
+
+.write-me-title {
+  text-align: left;
+  margin: 0;
+  width: 407px;
+}
+
+.write-me-first {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.input {
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid #202117;
+  border-radius: 10px;
+  padding: 17px;
+  margin: 12px 0 20px;
+}
+
+.input-small {
+  width: 407px;
+}
+
+.input-big {
+  width: 837px;
+  color: #202117;
+  opacity: 0.7;
+}
+
+.warning {
+  color: #f00;
+}
+
+.write-me__submit {
+  margin-left: calc(50% - 112px);
+}
+/*ent of the main part, start of motivation page*/
+.motivation-title {
+  text-align: left;
+  margin: 85px 0 6px;
+}
+
+.motivation-tag {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.motivation-tag p {
+  padding-right: 18px;
+}
+
+.motivation-text {
+  margin-bottom: 26px;
+}
+
+.motivation-img {
+  margin: 40px 0;
+}
+
+.motivation-label {
+  font-size: 14px;
+}
+
+.motivation-social {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.motivation-likes {
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0 auto 0 14px;
+}
+
+.motivation-link {
+  margin-left: 32px;
+}
+
+.motivation-big-text {
+  margin: 37px 30px 87px 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.36;
+}
+
+.motivation-href {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.reviews-box {
+  width: 793px;
+  padding: 24px 80px 50px 99px;
+  margin-bottom: 76px;
+  background: #ece1e1;
+  border-radius: 10px;
+}
+
+.review {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+.review-face {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.review-img {
+  border-radius: 10px;
+  margin: 13px 13px 13px 0;
+}
+
+.review-name {
+  font-weight: bold;
+}
+
+.comment-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.375;
+  margin: 0 0 69px 72px;
+}
+
+.comment-form {
+  width: 721px;
+  height: 210px;
+  margin: 0 0 81px 72px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.comment-input {
+  width: 221px;
+  border: none;
+  border-bottom: 1px solid #2e2f22;
+  padding-bottom: 10px;
+  margin-bottom: 35px;
+}
+
+.comment-submit {
+  margin-top: 15px;
+}
+
+.comment-textarea {
+  width: 406px;
+  height: 208px;
+  margin: 0;
+  margin-left: auto;
+  resize: none;
+}
+
+/*end of the motivation part*/
+.footer {
+  height: 181px;
+  background: #d7d1c9;
+}
+
+.footer-nav {
+  max-width: 631px;
+  margin: 0 auto;
+  padding-top: 65px;
+}
+
+.footer-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

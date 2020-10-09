@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Anne Sweet блог</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral+SC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-box">
+          <img src="./img/logo.jpg" alt="Anni Sweet" />
+          <nav class="header-nav">
+            <ul class="header-list">
+              <li class="header-list__item">
+                <a href="#stories" class="nondesign-a text">Статьи</a>
+              </li>
+              <li class="header-list__item">
+                <a href="#about-me" class="nondesign-a text">Обо мне</a>
+              </li>
+              <li class="header-list__item">
+                <a href="#portfolio" class="nondesign-a text">Портфолио</a>
+              </li>
+              <li class="header-list__item">
+                <a href="#write-me" class="nondesign-a text">Написать мне</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="stories">
+        <div class="container">
+          <div class="stories-start">
+            <h1 class="title stories-title">Все статьи</h1>
+            <select name="theme" class="stories-select text">
+              <option value="travel" class="text">Путешествия</option>
+              <option value="city" class="text">Город</option>
+              <option value="books" class="text">Книги</option>
+              <option value="picture" class="text">Фотографии</option>
+              <option value="recipe" class="text">Рецепты</option>
+              <option value="all" class="text" selected>Все статьи</option>
+            </select>
+          </div>
+          <div class="stories-boxes">
+            <div class="stories-box" data-category="travel">
+              <img src="./img/vacation.png" alt="Berlin" />
+              <h2 class="title subtitle stories-boxes-title">
+                Путешествие в Берлин в августе
+              </h2>
+              <p class="text">
+                Летний месяц я провела в столице Германии вместе с друзьями. И
+                вот как это было!
+              </p>
+              <div class="stories-box-floor">
+                <p class="text">
+                  Теги:&nbsp;<a href="" class="nondesign-a">путешествия</a>
+                </p>
+                <time datetime="2020-09-29" class="text">29.09.2020</time>
+              </div>
+            </div>
+
+            <div class="stories-box" data-category="city">
+              <img src="./img/coldbrew.jpg" alt="Coldbrew" />
+              <h2 class="title subtitle stories-boxes-title">
+                Где выпить колдбрю в Москве
+              </h2>
+              <p class="text">
+                Собрала для вас список любимых кофеен, где подают лучший летний
+                напиток.
+              </p>
+              <div class="stories-box-floor">
+                <p class="text">
+                  Теги:&nbsp;<a href="" class="nondesign-a">город</a>
+                </p>
+                <time datetime="2020-07-24" class="text">24.07.2020</time>
+              </div>
+            </div>
+
+            <div class="stories-box" data-category="books">
+              <img src="./img/books.jpg" alt="Books" />
+              <h2 class="title subtitle stories-boxes-title">
+                Прочитано: книжные рекомендации
+              </h2>
+              <p class="text">
+                Рассказываю о прочитанных за последнее время книгах: фавориты и
+                провалы.
+              </p>
+              <div class="stories-box-floor">
+                <p class="text">
+                  Теги:&nbsp;<a href="" class="nondesign-a">книги</a>
+                </p>
+                <time datetime="2020-07-15" class="text">15.07.2020</time>
+              </div>
+            </div>
+          </div>
+
+          <div class="stories-boxes stories-boxes-nomar">
+            <div class="stories-box stories-box-big" data-category="picture">
+              <img src="./img/flowers.jpg" alt="Florwers" />
+              <div class="stories-box-big__text">
+                <h2
+                  class="title subtitle stories-boxes-title stories-boxes-big-title"
+                >
+                  Снимки на плёнку
+                </h2>
+                <p class="text white-text stories-boxes-big-text">
+                  Поделилась с вами весенними фотографиями, и секретами удачных
+                  снимков.
+                </p>
+                <div class="stories-box-floor">
+                  <p class="text white-text">
+                    Теги:&nbsp;<a href="" class="nondesign-a white-text"
+                      >фотографии</a
+                    >
+                  </p>
+                  <time datetime="2020-09-29" class="text white-text"
+                    >29.06.2020</time
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="stories-box stories-box-big" data-category="recipe">
+              <img src="./img/cheesecake.jpg" alt="Cheesecake" />
+              <div class="stories-box-big__text">
+                <h2
+                  class="title subtitle stories-boxes-title stories-boxes-big-title"
+                >
+                  Домашний чизкейк
+                </h2>
+                <p class="text white-text stories-boxes-big-text">
+                  Что может быть лучше чизкейка с сезонными ягодами? Только
+                  домашний чизкейк!
+                </p>
+                <div class="stories-box-floor">
+                  <p class="text white-text">
+                    Теги:&nbsp;<a href="" class="nondesign-a white-text"
+                      >рецепты</a
+                    >
+                  </p>
+                  <time datetime="2020-09-29" class="text white-text"
+                    >24.06.2020</time
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="button text stories-box__button">Показать ещё</button>
+        </div>
+      </section>
+      <section id="about-me">
+        <div class="container">
+          <h1 class="title">Обо мне</h1>
+          <div class="about-me-box">
+            <figure><img src="./img/aboutMe.jpg" /></figure>
+            <div class="about-me__text">
+              <p class="text">
+                Всем привет! Меня зовут Аня, и&nbsp;это мой личный блог. Здесь
+                ты найдёшь рассказы о&nbsp;моих путешествиях, снимки
+                на&nbsp;плёнку, рецепты, обзоры на&nbsp;книги. В&nbsp;общем,
+                тексты о&nbsp;том, что мне инетресно.
+              </p>
+              <br />
+              <p class="text">
+                Я&nbsp;работаю копирайтером, поэтому мой блоге&nbsp;&mdash; это
+                ещё и&nbsp;моё портфолио. Ниже размещены несколько моих лучших
+                рабочих текстов. Буду рада новым сотрудничествам!
+              </p>
+              <br />
+              <p class="text">
+                Если вы&nbsp;хотите написать мне&nbsp;&mdash; это можно сделать
+                в&nbsp;соцсетях или через форму. Всегда приятно услышать
+                обратную связь от&nbsp;читателей и&nbsp;познакомиться поближе.
+              </p>
+              <br />
+              <p class="text">Приятного чтения!</p>
+              <p class="text about-me__text_new">
+                Я&nbsp;верю, что каждый раз пробуя новое, выходящее за&nbsp;зону
+                моего комфорта, я&nbsp;действительно узнаю настояющую себя.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio">
+        <div class="container">
+          <h1 class="title">Портфолио</h1>
+          <div class="portfolio">
+            <div class="portfolio-part portfolio-part-1">
+              <h2 class="title subtitle portfolio-title">Блог HTML Academy</h2>
+              <h3 class="title subtitle portfolio-subtitle">
+                &laquo;Как учиться продуктивно&raquo;
+              </h3>
+              <p class="text portfolio-text">
+                Про основные методы обучения,<br />которые помогут быстро
+                и&nbsp;надолго<br />запомнить информацию.
+              </p>
+            </div>
+            <div class="portfolio-part portfolio-part-2">
+              <h2 class="title subtitle portfolio-title white-text">
+                Журнал &laquo;LNK&raquo;
+              </h2>
+              <h3 class="title subtitle portfolio-subtitle white-text">
+                &laquo;Зачем поцелуи нужны человеку? И&nbsp;какие они
+                бывают&raquo;
+              </h3>
+              <p class="text white-text portfolio-text">
+                Поцелуи&nbsp;&mdash; повсеместная ежедневная практика.
+                Но&nbsp;зачем люди целуются?<br />Какие смысли вкладывают
+                в&nbsp;этот ритуал? И&nbsp;где корни этой практики?
+              </p>
+            </div>
+            <div class="portfolio-part portfolio-part-3">
+              <h2 class="title subtitle portfolio-title">
+                Журнал &laquo;Т&nbsp;&mdash; Л&raquo;
+              </h2>
+              <h3 class="title subtitle portfolio-subtitle">
+                &laquo;Советы по&nbsp;эффективной удалённой работе&raquo;
+              </h3>
+              <p class="text portfolio-text">
+                Поделилась лайфхаками, которые помогают мне работать продуктивно
+                из&nbsp;дома.
+              </p>
+            </div>
+          </div>
+          <button class="button text stories-box__button">Показать ещё</button>
+        </div>
+      </section>
+      <section id="write-me">
+        <h1 class="title">Написать мне</h1>
+        <form class="write-me">
+          <div class="write-me-first">
+            <label class="title subtitle write-me-title"
+              >Ваше имя<br /><input
+                type="text"
+                name="name"
+                class="input text input-small"
+                placeholder="Иван Иванов"
+                required
+            /></label>
+            <label class="title subtitle write-me-title"
+              >Email<br /><input
+                type="email"
+                name="email"
+                class="input text input-small"
+                placeholder="google@gmail.com"
+                required
+            /></label>
+            <div>
+              <h2 class="title subtitle write-me-title">Сообщение</h2>
+              <textarea
+                class="input text input-big"
+                type="message"
+                rows="9"
+                placeholder="Напишите здесь ваше сообщение."
+              ></textarea>
+            </div>
+          </div>
+          <input
+            type="submit"
+            class="write-me__submit button text"
+            name="submit"
+            value="Отправить"
+          />
+        </form>
+      </section>
+      <script src="./js/comment.js"></script>
+      <script src="./js/filter.js"></script>
+    </main>
+    <footer class="footer">
+      <nav class="footer-nav">
+        <ul class="footer-list">
+          <li><a href="#stories" class="nondesign-a text">ВК</a></li>
+          <li><a href="#stories" class="nondesign-a text">Телеграм</a></li>
+          <li><a href="#stories" class="nondesign-a text">Инстаграм</a></li>
+          <li><a href="#stories" class="nondesign-a text">Твиттер</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
